@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>AnimeRE - Favoritos</title>
+</head>
+<body>
+<header>
+    <nav class="menu">
+        <a class="AnimeRE" href="index.html">AnimeRE</a>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar">
+            <a class="fas fa-search"></a>
+        </div>
+        <div class="barrinha"></div>
+        <div class="favorited">
+            <a href="listafavoritos.html"><i class="fa-regular fa-bookmark"></i>Lista Favoritos</a>
+        </div>
+        <div class="login">
+            <a href="login.html">Fazer Login</a>
+        </div>
+    </nav>
+</header>
+    <div class="all">
+        <h1 class="favis">Meus Favoritos</h1>
+
+        <div class="favoritos-grid" id="favoritosGrid"></div>
+    </div>
+    <script src="scripts/listafavoritos.js"></script>
+</body>

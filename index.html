@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>AnimeRE - Inicio</title>
+</head>
+<body>
+<header>
+    <nav class="menu">
+        <a class="AnimeRE" href="index.html">AnimeRE</a>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar">
+            <a class="fas fa-search"></a>
+        </div>
+        <div class="barrinha"></div>
+        <div class="favorited">
+            <a href="listafavoritos.html"><i class="fa-regular fa-bookmark"></i>Lista Favoritos</a>
+        </div>
+        <div class="login">
+            <a href="login.html">Fazer Login</a>
+        </div>
+    </nav>
+</header>
+
+<section class="animes">
+    <div class="carroussel">
+        <div class="carroussel-main">
+            <div class="carroussel-content">
+                <img src="animes/frieren.png" alt="">
+            </div>
+            <div class="carroussel-content">
+                <img src="animes/dungeonmeshi.png" alt="">
+            </div>
+            <div class="carroussel-content">
+                <img src="animes/apotecaria.png" alt="">
+            </div>
+        </div>
+        </div>
+          <div class="carousel-dots"></div>
+        </div>
+    </div>
+    <div class="seguir"> 
+        <h3>Mais Curtidos</h3>
+    </div>
+    <div class="animes-list">
+        <div class="animes-container">
+            <div class="animes-img">
+                <img src="animes/jjk.jpg" alt="">
+                <div>
+                    <p>"Jujutsu Kaisen"</p>
+                    <span>Jujutsu Kaisen é um anime desgraçado</span>
+                </div>
+            </div>
+            <div class="animes-img">
+                <img src="animes/dungeonmeshi.png" alt="">
+                <div>
+                    <p>"Dungeon Meshi"</p>
+                    <span>Dungeon Meshi é um anime desgraçado</span>
+                </div>
+            </div>
+            <div class="animes-img">
+                <img src="animes/frieren.vertical.jpg" alt="">
+                <div>
+                    <p>"Sousou no Frieren"</p>
+                    <span>Sousou no Frieren é um anime desgraçado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="animes-review">
+    <h1>Animes</h1>
+    <div class="anime">
+        <div class="item"
+            data-id="dungeonmeshi"
+            data-title="Dungeon Meshi"
+            data-img="animes/dungeonmeshi.vertical.jpg">
+            <a href="reviews.html?id=dungeonmeshi"><img src="animes/dungeonmeshi.vertical.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="dungeonmeshi"></i>
+        </div>
+        <div class="item"
+            data-id="frieren"
+            data-title="Sousou no Frieren"
+            data-img="animes/frieren.vertical.jpg">
+            <a href="reviews.html?id=frieren"><img src="animes/frieren.vertical.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="frieren"></i>
+        </div>
+        <div class="item"
+            data-id="g.lagann"
+            data-title="Gurren Lagann"
+            data-img="animes/gurren.lagann.jpg">
+            <a href="reviews.html?id=g-lagann"><img src="animes/gurren.lagann.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="g-lagann"></i>
+        </div>
+        <div class="item"
+            data-id="apotecaria"
+            data-title="The Apothecary Diaries"
+            data-img="animes/theapothecarydiaries.jpg">
+            <a href="reviews.html?id=apotecaria"><img src="animes/theapothecarydiaries.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="apotecaria"></i>
+        </div>
+        <div class="item"
+            data-id="trigun"
+            data-title="Trigun"
+            data-img="animes/trigun.jpg">
+            <a href="reviews.html?id=trigun"><img src="animes/trigun.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="trigun"></i>
+        </div>
+    </div>
+
+    <h1>Mangás</h1>
+    <div class="mangas">
+        <div class="item"
+            data-id="biblio"
+            data-title="Bibliomania"
+            data-img="mangas/bibliomania.jpg">
+            <a href="reviews.html?id=biblio"><img src="mangas/bibliomania.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="biblio"></i>
+        </div>
+        <div class="item"
+            data-id="gachi"
+            data-title="Gachiakuta"
+            data-img="mangas/gachiakuta.png">
+            <a href="reviews.html?id=gachi"><img src="mangas/gachiakuta.png" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="gachi"></i>
+        </div>
+        <div class="item"
+            data-id="mia"
+            data-title="Made in Abyss"
+            data-img="mangas/made.in.abyss.png">
+            <a href="reviews.html?id=mia"><img src="mangas/made.in.abyss.png" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="mia"></i>
+        </div>
+        <div class="item"
+            data-id="ruri"
+            data-title="RuriDragon"
+            data-img="mangas/ruridragon.png">
+            <a href="reviews.html?id=ruri"><img src="mangas/ruridragon.png" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="ruri"></i>
+        </div>
+        <div class="item"
+            data-id="s-eater"
+            data-title="Soul Eater"
+            data-img="mangas/soul.eater.jpg">
+            <a href="reviews.html?id=s-eater"><img src="mangas/soul.eater.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="s-eater"></i>
+        </div>
+    </div>
+
+    <h1>Light Novels</h1>
+    <div class="novel">
+        <div class="item"
+            data-id="rezero"
+            data-title="Re:Zero"
+            data-img="novels/rezero.jpg">
+            <a href="reviews.html?id=rezero"><img src="novels/rezero.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="rezero"></i>
+        </div>
+        <div class="item"
+            data-id="tdora"
+            data-title="Toradora"
+            data-img="novels/toradora.jpg">
+            <a href="reviews.html?id=tdora"><img src="novels/toradora.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="tdora"></i>
+        </div>
+        <div class="item"
+            data-id="m-tensei"
+            data-title="Mushoku Tensei"
+            data-img="novels/mushoku.tensei.jpg">
+            <a href="reviews.html?id=m-tensei"><img src="novels/mushoku.tensei.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="m-tensei"></i>
+        </div>
+        <div class="item"
+            data-id="gap"
+            data-title="GAP"
+            data-img="novels/gap.jpg">
+            <a href="reviews.html?id=gap"><img src="novels/gap.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="gap"></i>
+        </div>
+        <div class="item"
+            data-id="lom"
+            data-title="Lord Of Mysteries"
+            data-img="novels/lord.of.mysteries.jpg">
+            <a href="reviews.html?id=lom"><img src="novels/lord.of.mysteries.jpg" alt=""></a>
+            <i class="fa-regular fa-bookmark fav" data-id="lom"></i>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
