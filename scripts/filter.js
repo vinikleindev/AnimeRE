@@ -45,9 +45,9 @@ function filtrar() {
 
 searchInput.addEventListener("input", filtrar);
 
-/* fechar ao clicar fora */
 document.addEventListener("click", (e) => {
   if (!document.querySelector(".search").contains(e.target)) {
     animeShow.style.display = "none";
   }
 });
+
