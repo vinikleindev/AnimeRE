@@ -1,4 +1,4 @@
-const animes = {
+window.animes = {
   // ===== ANIMES =====
   "dungeonmeshi": {
     title: "Dungeon Meshi",

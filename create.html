@@ -12,8 +12,9 @@
     <nav class="menu">
         <a class="AnimeRE" href="index.html">AnimeRE</a>
         <div class="search">
-            <input type="text" placeholder="Pesquisar">
-            <a class="fas fa-search"></a>
+            <input type="text" placeholder="Pesquisar" id="searchInput" autocomplete="off">
+            <a class="fas fa-search" id="searchbtn"></a>
+            <div id="animeshow"></div>
         </div>
         <div class="barrinha"></div>
         <div class="favorited">
@@ -42,4 +43,6 @@
             <div class="criar-create"><a href="index.html">Criar uma conta</a></div>          
         </div>
     </main>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/filter.js"></script>
 </body>

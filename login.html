@@ -12,22 +12,21 @@
   </head>
   <body>
     <header>
-      <nav class="menu">
+    <nav class="menu">
         <a class="AnimeRE" href="index.html">AnimeRE</a>
         <div class="search">
-          <input type="text" placeholder="Pesquisar" />
-          <a class="fas fa-search"></a>
+            <input type="text" placeholder="Pesquisar" id="searchInput" autocomplete="off">
+            <a class="fas fa-search" id="searchbtn"></a>
+            <div id="animeshow"></div>
         </div>
         <div class="barrinha"></div>
         <div class="favorited">
-          <a href="listafavoritos.html"
-            ><i class="fa-regular fa-bookmark"></i>Lista Favoritos</a
-          >
+            <a href="listafavoritos.html"><i class="fa-regular fa-bookmark"></i>Lista Favoritos</a>
         </div>
         <div class="login">
-          <a href="login.html">Fazer Login</a>
+            <a href="login.html">Fazer Login</a>
         </div>
-      </nav>
+    </nav>
     </header>
     <main class="login-container">
       <div class="login-menu">
@@ -45,5 +44,7 @@
         <div class="criar"><a href="create.html">Criar uma conta</a></div>
       </div>
     </main>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/filter.js"></script>
   </body>
 </html>

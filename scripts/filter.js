@@ -1,53 +1,50 @@
-const searchInput = document.getElementById("searchInput");
-const animeShow = document.getElementById("animeshow");
-const items = document.querySelectorAll(".item");
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const animeShow = document.getElementById("animeshow");
+  const searchBox = document.querySelector(".search");
 
-function filtrar() {
-  const termo = searchInput.value.toLowerCase().trim();
-  animeShow.innerHTML = "";
+  // Se a página não tiver barra de pesquisa, não faz nada
+  if (!searchInput || !animeShow || !searchBox) return;
 
-  if (termo === "") {
+  function filtrar() {
+    const termo = searchInput.value.toLowerCase().trim();
+    animeShow.innerHTML = "";
     animeShow.style.display = "none";
-    return;
-  }
 
-  let find = false;
+    if (!termo) return;
 
-  items.forEach((item) => {
-    const titulo = (item.dataset.title || "").toLowerCase();
+    const db = window.animes;
+    if (!db) {
+      console.error("window.animes não existe. Verifique se data.js está carregando antes do filter.js.");
+      return;
+    }
 
-    if (titulo.includes(termo)) {
-      find = true;
+    let encontrou = false;
 
-      const id = item.dataset.id;
-      const img = item.dataset.img;
-      const title = item.dataset.title;
+    for (const [id, data] of Object.entries(db)) {
+      const title = (data.title || "").toLowerCase();
+      if (!title.includes(termo)) continue;
+
+      encontrou = true;
 
       const link = document.createElement("a");
-      link.classList.add("anime-content");
+      link.className = "anime-content";
       link.href = `reviews.html?id=${encodeURIComponent(id)}`;
-
       link.innerHTML = `
-        <img src="${img}" alt="${title}">
-        <p>${title}</p>
+        <img src="${data.image}" alt="${data.title}">
+        <p>${data.title}</p>
       `;
-
-      link.addEventListener("click", () => {
-        animeShow.style.display = "none";
-      });
 
       animeShow.appendChild(link);
     }
-  });
 
-  animeShow.style.display = find ? "flex" : "none";
-}
-
-searchInput.addEventListener("input", filtrar);
-
-document.addEventListener("click", (e) => {
-  if (!document.querySelector(".search").contains(e.target)) {
-    animeShow.style.display = "none";
+    if (encontrou) animeShow.style.display = "flex";
   }
-});
 
+  searchInput.addEventListener("input", filtrar);
+
+  // Fecha ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (!searchBox.contains(e.target)) animeShow.style.display = "none";
+  });
+});
