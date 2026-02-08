@@ -37,10 +37,13 @@ margin-right: 5px;
 }
 
 .search {
-position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.search a {
+#searchbtn {
 position: absolute;
 top: -2.5px;
 left: 315px;
@@ -50,7 +53,7 @@ cursor: pointer;
 padding: 10px;
 }
 
-.search a:hover {
+#searchbtn:hover {
 background: none;
 }
 
@@ -443,4 +446,70 @@ height: 360px;
 
 .criar-create a:hover{
   color: #2671c8;
+}
+
+/*BARRA SEARCH*/
+#searchInput{
+  flex: 1;
+  min-width: 220px;
+}
+
+#searchbtn{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#animeshow{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  width: 100%;
+
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.75);
+
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  z-index: 10;
+}
+
+#animeshow .anime-content{
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+
+  color: #111;
+  text-decoration: none;
+}
+
+#animeshow .anime-content img{
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#animeshow::-webkit-scrollbar {
+  width: 6px;
+}
+
+#animeshow::-webkit-scrollbar-thumb {
+  background: #3a82f7;
+  border-radius: 10px;
 }

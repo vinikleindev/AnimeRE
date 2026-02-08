@@ -12,8 +12,9 @@
     <nav class="menu">
         <a class="AnimeRE" href="index.html">AnimeRE</a>
         <div class="search">
-            <input type="text" placeholder="Pesquisar">
-            <a class="fas fa-search"></a>
+            <input type="text" placeholder="Pesquisar" id="searchInput" autocomplete="off">
+            <a class="fas fa-search" id="searchbtn"></a>
+            <div id="animeshow"></div>
         </div>
         <div class="barrinha"></div>
         <div class="favorited">
@@ -51,21 +52,21 @@
                 <img src="animes/jjk.jpg" alt="">
                 <div>
                     <p>"Jujutsu Kaisen"</p>
-                    <span>Jujutsu Kaisen é um anime desgraçado</span>
+                    <span>Um estudante entra no mundo das maldições após adquirir um poder sombrio.</span>
                 </div>
             </div>
             <div class="animes-img">
                 <img src="animes/dungeonmeshi.png" alt="">
                 <div>
                     <p>"Dungeon Meshi"</p>
-                    <span>Dungeon Meshi é um anime desgraçado</span>
+                    <span>Aventureiros exploram uma masmorra e sobrevivem cozinhando monstros.</span>
                 </div>
             </div>
             <div class="animes-img">
                 <img src="animes/frieren.vertical.jpg" alt="">
                 <div>
                     <p>"Sousou no Frieren"</p>
-                    <span>Sousou no Frieren é um anime desgraçado</span>
+                    <span>Uma maga imortal relembra o passado enquanto busca entender o valor do tempo.</span>
                 </div>
             </div>
         </div>
@@ -192,5 +193,6 @@
 </section>
 
 <script src="scripts/script.js"></script>
+<script src="scripts/filter.js"></script>
 </body>
 </html>
