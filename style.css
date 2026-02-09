@@ -151,23 +151,23 @@ button {
 
 .carroussel-content {
   min-width: 100%;
-  position: relative;
   overflow: hidden;
   border-radius: 10px;
   height: 100%;
 }
 
 .carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  position: absolute;
-  bottom: 315px;
-  left: 710px;
-  transform: translateX(-50%);
+  gap: 10px;
   background: rgba(0, 0, 0, 0.748);
   border-radius: 10px;
   padding: 6px;
+  z-index: 5;
 }
 
 .dot {
